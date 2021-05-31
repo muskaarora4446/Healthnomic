@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center" style="font-size: 4rem;">Signup Form</h1>
+            <p id="description" class="description text-center" style="font-size: 1.5rem;">
+                User Information
+            </p>
+        </header>
+        <form id="survey-form">
+            <h2 style="text-align:center;">Personal Details</h2>
+            <div class="form-group grid">
+                <label id="name-label" for="name">Full Name</label>
+                <input type="text" name="first" id="name" class="form-control" placeholder="First" required />
+                <input type="text" name="last" id="name" class="form-control" placeholder="Last" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+            <div class="form-group">
+                <label id="password-label" for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" aria-describedby="password-constraints" class="form-control" placeholder="" required />
+                <!-- <p class="hint">At least eight characters, with at least one lowercase and one uppercase letter.</p> -->
+                <input type="checkbox" style="margin-top:5px;" onclick="myFunction()"> Show Password
+            </div>
+            <div class="form-group">
+                <label for="pno">Phone Number</label>
+                <input type="tel" name="phone" id="pno" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <p>Gender</p>
+                <label>
+              <input
+                name="Gender"
+                value="male"
+                type="radio"
+                class="input-radio"
+                checked
+              />Male</label>
+                <label>
+              <input
+                name="Gender"
+                value="female"
+                type="radio"
+                class="input-radio"
+              />Female</label
+            >
+      
+            <label
+              ><input
+                name="Gender"
+                value="others"
+                type="radio"
+                class="input-radio"
+              />Others</label
+            >
+          </div>
+
+          <div class="form-group">
+            <p>Address</p>
+            <textarea
+              id="address"
+              class="input-textarea"
+              name="Address"
+              placeholder="Enter your address"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+                <input type="tel" name="Pincode" id="pincode" class="form-control" placeholder="XXXXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="aadhar">Aadhar Number</label>
+                <input type="tel" name="aadhar" id="aadhar" class="form-control" placeholder="XXXX  XXXX  XXXX  XXXX">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <p>Blood Group</p>
+                <select id="dropdown" name="blood" class="form-control" required>
+              <option disabled selected value>Select Blood group</option>
+              <option value="A+">A+</option>
+              <option value="B+">B+</option>
+              <option value="AB+">AB+</option>
+              <option value="A-">A-</option>
+              <option value="B-">B-</option>
+              <option value="AB-">AB-</option>
+            </select>
+            </div>
+
+            <hr>
+
+            <h2 style="margin-top:50px; text-align:center;">Medical History</h2>
+
+            <div class="form-group">
+
+                <label><input
+                name="c3[]"
+                value="Are you under a physician's care now?"
+                type="checkbox"
+                class="input-checkbox"
+              />Are you under a physician's care now?</label
+            >
+            <label>
+              <input
+                name="c3[]"
+                value="Have you ever been hospitalized or had a major operation?"
+                type="checkbox"
+                class="input-checkbox"
+              />Have you ever been hospitalized or had a major operation?</label
+            >
+            <label
+              ><input
+                name="c3[]"
+                value="Have you ever had a serious head or neck injury?"
+                type="checkbox"
+                class="input-checkbox"
+              />Have you ever had a serious head or neck injury?</label
+            >
+            <label
+              ><input
+                name="c3[]"
+                value="Are you taking any medication, pills or drugs?"
+                type="checkbox"
+                class="input-checkbox"
+              />Are you taking any medication, pills or drugs?</label
+            >
+            <label
+              ><input
+                name="c3[]"
+                value="Do you use Tobacco"
+                type="checkbox"
+                class="input-checkbox"
+              />Do you use Tobacco</label
+            >
+            <label
+              ><input
+                name="c3[]"
+                value="Do you use controlled substances"
+                type="checkbox"
+                class="input-checkbox"
+              />Do you use controlled substances</label
+            >
+          </div>
+
+            <div class="form-group">
+                <h3>Are you allergic to any of the following :</h3>
+                <label><input
+                name="c2[]"
+                value="Asprin"
+                type="checkbox"
+                class="input-checkbox"
+              />Asprin</label
+            >
+            <label>
+              <input
+                name="c2[]"
+                value="Penecilin"
+                type="checkbox"
+                class="input-checkbox"
+              />Penecilin</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Codeine"
+                type="checkbox"
+                class="input-checkbox"
+              />Codeine</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Local Anesthetics"
+                type="checkbox"
+                class="input-checkbox"
+              />Local Anesthetics</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Acrylic"
+                type="checkbox"
+                class="input-checkbox"
+              />Acrylic</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Metal"
+                type="checkbox"
+                class="input-checkbox"
+              />Metal</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Latex"
+                type="checkbox"
+                class="input-checkbox"
+              />Latex</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="Sulfa Drugs"
+                type="checkbox"
+                class="input-checkbox"
+              />Sulfa Drugs</label
+            >
+            <label
+              ><input
+                name="c2[]"
+                value="others"
+                type="checkbox"
+                class="input-checkbox"
+              />others</label
+            >
+            </div>
+
+            <div class="form-group">
+                <h3>Do you have any of the following :</h3>
+                <label><input
+                name="c1[]"
+                value="AIDS/HIV positive"
+                type="checkbox"
+                class="input-checkbox"
+              />AIDS/HIV positive</label
+            >
+            <label>
+              <input
+                name="c1[]"
+                value="Alzheimers Disease"
+                type="checkbox"
+                class="input-checkbox"
+              />Alzheimers Disease</label
+            >
+            <label>
+                <input
+                  name="c1[]"
+                  value="Anemia"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Anemia</label
+              >
+            <label
+              ><input
+                name="c1[]"
+                value="Anigma"
+                type="checkbox"
+                class="input-checkbox"
+              />Anigma</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Arthiritis"
+                type="checkbox"
+                class="input-checkbox"
+              />Arthiritis</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Artificial Heart Valve"
+                type="checkbox"
+                class="input-checkbox"
+              />Artificial Heart Valve</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Artificial Joint"
+                type="checkbox"
+                class="input-checkbox"
+              />Artificial Joint</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Asthama"
+                type="checkbox"
+                class="input-checkbox"
+              />Asthama</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Blood Disease"
+                type="checkbox"
+                class="input-checkbox"
+              />Blood Disease</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Blood Transfusion"
+                type="checkbox"
+                class="input-checkbox"
+              />Blood Transfusion</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Blood Problem"
+                type="checkbox"
+                class="input-checkbox"
+              />Blood Problem</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Bruise Easily"
+                type="checkbox"
+                class="input-checkbox"
+              />Bruise Easily</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Cancer"
+                type="checkbox"
+                class="input-checkbox"
+              />Cancer</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Chemotherapy"
+                type="checkbox"
+                class="input-checkbox"
+              />Chemotherapy</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Chest Pains"
+                type="checkbox"
+                class="input-checkbox"
+              />Chest Pains</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Cold Sores"
+                type="checkbox"
+                class="input-checkbox"
+              />Cold Sores</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Cortisone Medicine"
+                type="checkbox"
+                class="input-checkbox"
+              />Cortisone Medicine</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Diabetes"
+                type="checkbox"
+                class="input-checkbox"
+              />Diabetes</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Drug Addiction"
+                type="checkbox"
+                class="input-checkbox"
+              />Drug Addiction</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Easily Winded"
+                type="checkbox"
+                class="input-checkbox"
+              />Easily Winded</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Excessive Bleeding"
+                type="checkbox"
+                class="input-checkbox"
+              />Excessive Bleeding</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Excessive Thirst"
+                type="checkbox"
+                class="input-checkbox"
+              />Excessive Thirst</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Frequent Cough"
+                type="checkbox"
+                class="input-checkbox"
+              />Frequent Cough</label
+            >
+            <label
+              ><input
+                name="c1[]"
+                value="Frequent Diarrahea"
+                type="checkbox"
+                class="input-checkbox"
+              />Frequent Diarrahea</label
+            >
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <h2 style="margin-top:50px; text-align:center;">Emergency Contact</h2>
+                <label id="name-label" for="name">Contact Name</label>
+                <input type="text" name="cname" id="name" class="form-control" />
+
+                <label for="pno" style="margin-top:10px;">Contact Number</label>
+                <input type="tel" name="cnum" id="pno" class="form-control">
+
+                <p style="margin-top:10px;">Contact Address</p>
+                <textarea id="address" class="input-textarea" name="cadd" placeholder="Enter your address"></textarea>
+            </div>
+
+            <hr>
+
+            <div class="form-group files">
+                <h2 style="margin-top:50px; text-align:center;">Attach Your Reports</h2>
+                <input type="file" name="rep1" class="upload">
+                <input type="file" name="rep2" class="upload">
+                <input type="file" name="rep3" class="upload">
+                <input type="file" name="rep4" class="upload">
+            </div>
+
+            <div class="form-group files">
+                <h2 style="text-align:center;">Attach Your Prescriptions</h2>
+                <input type="file" name="rep1" class="upload">
+                <input type="file" name="rep2" class="upload">
+                <input type="file" name="rep3" class="upload">
+                <input type="file" name="rep4" class="upload">
+            </div>
+
+            <div class="form-group">
+                <!-- <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button> -->
+
+                <button id="button" class="ready" onclick="clickButton();">
+  
+              <div class="message submitMessage">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
+                  <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 "/>
+                  <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3"/>
+                </svg> <span class="button-text">Submit</span>
+              </div>
+              
+              <div class="message loadingMessage">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                  <circle class="loadingCircle" cx="2.2" cy="10" r="1.6"/>
+                  <circle class="loadingCircle" cx="9.5" cy="10" r="1.6"/>
+                  <circle class="loadingCircle" cx="16.8" cy="10" r="1.6"/>
+                </svg>
+              </div>
+              
+              <div class="message successMessage">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                  <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 "/>
+                </svg> <span class="button-text">Success</span>
+              </div>
+            </button>
+
+                <canvas id="canvas"></canvas>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
